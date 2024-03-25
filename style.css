@@ -10,96 +10,104 @@ body {
 
 /*title*/
 .title {
-  background-image: url("./housetopassets/samgyup.jpeg");
+  background-image: url("./assets/images/background2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 10% 10%;
+  padding: 13% 10%;
 }
 
 .logo {
-  width: 15rem;
+  width: 20rem;
   border-radius: 50%;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-.display-1 {
-  color: #ffffec;
-}
-
-h4 {
-  color: #ffffec;
-}
-.text-nowrap {
-  margin-left: 5rem;
-  border-radius: 10px;
 }
 
 /*Statement*/
 .statement {
-  background-color: #9290c3;
-  padding: 5rem;
+  background-color: #858496;
+  padding: 8rem;
 }
 
 #menu1 {
   transform: translateY(-30px);
   margin-right: 2rem;
+  height: 20rem;
+  width: 15rem;
+  box-shadow: 8px 8px 16px #7c7b8c, -8px -8px 16px #8e8da1;
 }
 
-.menu2 {
+#menu2 {
   transform: translateY(50px);
+  height: 20rem;
+  width: 15rem;
+  box-shadow: 8px 8px 16px #7c7b8c, -8px -8px 16px #8e8da1;
 }
-
-.rounded {
+#myBtn {
   width: 40%;
 }
 
 /* Takeout */
 .takeout {
-  background-color: #fefbf6;
+  background-color: #f5fffa;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5rem;
   text-align: center;
 }
+
+.card {
+  background-color: #ffffff;
+  box-shadow: -8px 8px 16px #eef7f3, 8px -8px 16px #eef7f3;
+}
+
 .card-img-top {
   border-radius: 50%;
 }
 
 /*Testimonial*/
 .customers-comment {
-  background-color: #9290c3;
+  background-color: #858496;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 #testimonial-image {
   filter: opacity(90%);
+  width: 40%;
+  box-shadow: 8px 8px 16px #7c7b8c, -8px -8px 16px #8e8da1;
 }
 
 .carousel-inner {
   transition: 1s, ease-in, 1.5s;
 }
 
+.carousel-control-prev-icon {
+  background-image: url("./assets/images/prev.png");
+}
+
+.carousel-control-next-icon {
+  background-image: url("./assets/images/next.png");
+}
 /* contact */
 .contacts {
-  background-color: #fefbf6;
+  background-color: #f5fffa;
   padding: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#map {
-  width: 30rem;
-  border: solid 1px;
-  border-radius: 10px;
-}
-
 .address {
   margin-top: 3rem;
+}
+
+iframe {
+  box-shadow: -8px 8px 16px #eef7f3, 8px -8px 16px #eef7f3;
+}
+
+a {
+  text-shadow: -8px 8px 16px #eef7f3, 8px -8px 16px #eef7f3;
 }
 
 /* Modal */
@@ -120,11 +128,11 @@ h4 {
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefbf6;
+  background-color: #f5fffa;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 90%;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.5s;
   animation-name: animatetop;
@@ -165,25 +173,97 @@ h4 {
 
 .modal-footer {
   font-size: small;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (max-width: 1028px) {
+@media (max-width: 800px) {
+  /* Title */
+
+  .title {
+    padding: 0;
+    height: 45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titlediv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    width: 90%;
+  }
+
+  /* Statement */
+  .statement {
+    padding: 3rem;
+  }
+
+  .menudiv {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .picturediv {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  blockquote p {
+    text-align: justify;
+    text-indent: 40px;
+  }
   blockquote {
     text-align: center;
   }
-  .rounded {
+  #menu1 {
+    margin-right: 0;
+    margin-bottom: 10px;
+    transform: translateY(0);
+  }
+
+  #menu2 {
+    transform: translateY(0);
+  }
+
+  #myBtn {
     width: 100%;
   }
-  .title {
-    text-align: center;
-    padding: 50% 10%;
+  /* Takeout */
+  .takeout {
+    padding: 3rem;
   }
+
+  #takeoutcard {
+    width: 20rem !important;
+  }
+  /* Testimonial */
+  #testimonial-image {
+    width: 80%;
+  }
+
+  /* Contacts */
   .contacts {
     background-color: #fefbf6;
     padding: 2rem;
     text-align: center;
   }
-  #map {
-    width: 20rem;
+
+  iframe {
+    width: 100%;
+  }
+
+  /* Modal */
+
+  .modal-content {
+    width: 95%;
   }
 }
