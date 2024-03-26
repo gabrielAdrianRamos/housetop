@@ -24,7 +24,7 @@ body {
 
 /*Statement*/
 .statement {
-  background-color: #858496;
+  background-color: #8e8da1;
   padding: 8rem;
 }
 
@@ -132,7 +132,7 @@ a {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 90%;
+  width: 80%;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.5s;
   animation-name: animatetop;
