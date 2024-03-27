@@ -48,7 +48,7 @@ body {
 
 /* Takeout */
 .takeout {
-  background-color: #f5fffa;
+  background-color: #efefef;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,7 +58,7 @@ body {
 
 .card {
   background-color: #ffffff;
-  box-shadow: -8px 8px 16px #eef7f3, 8px -8px 16px #eef7f3;
+  box-shadow: -8px 8px 16px #e8e8e8, 8px -8px 16px #e8e8e8;
 }
 
 .card-img-top {
@@ -91,7 +91,7 @@ body {
 }
 /* contact */
 .contacts {
-  background-color: #f5fffa;
+  background-color: #efefef;
   padding: 4rem;
   display: flex;
   justify-content: center;
@@ -103,11 +103,11 @@ body {
 }
 
 iframe {
-  box-shadow: -8px 8px 16px #eef7f3, 8px -8px 16px #eef7f3;
+  box-shadow: -8px 8px 16px #e8e8e8, 8px -8px 16px #e8e8e8;
 }
 
 a {
-  text-shadow: -8px 8px 16px #eef7f3, 8px -8px 16px #eef7f3;
+  text-shadow: -8px 8px 16px #eef7f3, 8px -8px 16px #cbcbcb;
 }
 
 /* Modal */
@@ -128,11 +128,11 @@ a {
 
 /* Modal Content */
 .modal-content {
-  background-color: #f5fffa;
+  background-color: #efefef;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 90%;
+  width: 80%;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.5s;
   animation-name: animatetop;
@@ -187,6 +187,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    background-attachment: scroll;
   }
 
   .titlediv {
